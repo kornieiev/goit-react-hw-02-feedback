@@ -14,12 +14,12 @@ export default function Statistics({
     <>
       <h2>{title}</h2>
       <ul>
-        <li className={css.red}>Good: {good}</li>
-        <li>Neutral: {neutral}</li>
-        <li>Bad: {bad}</li>
+        <li className={css.list}>Good: {good}</li>
+        <li className={css.list}>Neutral: {neutral}</li>
+        <li className={css.list}>Bad: {bad}</li>
 
-        <li>Total: {total}</li>
-        <li>Positive feedback: {positivePercentage}%</li>
+        <li className={css.list}>Total: {total}</li>
+        <li className={css.list}>Positive feedback: {positivePercentage}%</li>
       </ul>
     </>
   );
