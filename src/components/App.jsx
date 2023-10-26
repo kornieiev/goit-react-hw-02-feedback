@@ -15,7 +15,9 @@ export class App extends Component {
   };
 
   countTotalFeedback = () => {
-    return this.state.good + this.state.neutral + this.state.bad;
+    return Object.values(this.state).reduce((acc, current) => acc + current);
+    // це аналогічний код:
+    // return this.state.good + this.state.neutral + this.state.bad;
   };
 
   countPositiveFeedbackPercentage = () => {
