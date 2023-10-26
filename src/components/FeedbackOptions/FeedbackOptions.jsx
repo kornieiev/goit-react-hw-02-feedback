@@ -9,7 +9,11 @@ export default function FeedbackOptions({ onLeaveFeedback, options }) {
         <ul className={css.btnList}>
           {options.map(key => (
             <li key={key}>
-              <button className={css.btn} value={key} onClick={onLeaveFeedback}>
+              <button
+                className={css.btn}
+                value={key}
+                onClick={() => onLeaveFeedback(key)}
+              >
                 {key.charAt(0).toUpperCase()}
                 {key.slice(1)}
               </button>

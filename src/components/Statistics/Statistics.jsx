@@ -8,11 +8,9 @@ export default function Statistics({
   bad,
   total,
   positivePercentage,
-  title,
 }) {
   return (
     <>
-      <h2>{title}</h2>
       <ul>
         <li className={css.list}>Good: {good}</li>
         <li className={css.list}>Neutral: {neutral}</li>
